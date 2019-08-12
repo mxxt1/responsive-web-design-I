@@ -46,7 +46,7 @@ nav a{
 }
 
 .navLogo img{
-    max-width:100%;
+    /* max-width:100%; */
 }
 
 
@@ -109,7 +109,7 @@ nav a{
 .topRow div{
     display:flex;
     flex-direction:column;
-    width:50%
+    width:48%
 }
 
 .middleImg{
@@ -127,6 +127,11 @@ nav a{
 .bottomRow{
     display:flex;
     margin-bottom:2%;
+    justify-content:space-between;
+}
+
+.bottomRow div{
+    width:30%;
 }
 
 
@@ -140,4 +145,60 @@ nav a{
 footer{
     display:flex;
     justify-content:center;
+}
+
+
+
+/* Media Queries */
+ /* tablet  */
+
+@media screen and (max-width:800px){
+
+    body{
+        /* display:flex;
+        flex-direction:column; */
+        max-width:90%;
+        margin:0 auto;
+        align-items:center;
+    }
+
+    header{
+        display:flex;
+        width:100%;
+        flex-direction:column-reverse;
+        justify-content:center;
+        margin-top:5%;
+    }
+
+    nav{
+        width:100%;
+    }
+    .navLogo{
+        display:flex;
+        width:100%;
+        justify-content:center;
+        margin-bottom:3%;
+
+    }
+
+    .heroBanner{
+        height:40vh;
+    }
+
+    .heroRight{
+        display:flex;
+        display:none;
+    }
+
+
+}
+
+
+
+
+/* Phone/Mobile */
+
+@media screen 
+and (max-width:400){
+    
 }
