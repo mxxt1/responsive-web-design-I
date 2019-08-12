@@ -1,3 +1,425 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+*{
+    box-sizing:border-box;
+    padding:0;  
+}
+
+body{
+    /* display:flex;
+    flex-direction:column; */
+    max-width:80%;
+    margin:0 auto;
+    align-items:center;
+}
+
+h1, h2, h3{
+    font-family:"Bangers",sans-serif;
+}
+
+h2{
+    font-size:18px;
+}
+
+p, address, a{
+    font-family:"Titillium+Web",sans-serif
+}
 
 
+/***** Header *****/
+header{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    height:5vh;
+    margin-top:3vh;
+    margin-bottom:3vh;
+}
+
+nav{
+    display:flex;
+    width:70%;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:lightgray;
+    font-weight:bold;
+}
+
+.navLogo{
+    display:flex;
+    width:20%;
+    /* height:70%; */
+}
+
+.navLogo img{
+    /* max-width:100%; */
+}
+
+
+/****** Hero Banner ******/
+
+.heroBanner{
+    display:flex;
+    height:50vh;
+    width:100%;
+    /* justify-content:space-around; */
+    align-items:center;
+    justify-content:center;
+    margin-bottom:10vh;
+    margin-top:10vh;
+}
+
+.heroLeft{
+    display:flex;
+    flex-direction:column;
+    width:47%;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    font-size: 35px;
+}
+
+
+.heroLeft a{
+    display:flex;
+    text-decoration:none;
+    font-size:15px;
+    font-weight: bold;
+    justify-content:center;
+    align-items:center;
+    border:1px solid black;
+    width:33%;
+    padding-top:2%;
+    padding-bottom:2%;
+    color:black;
+}
+
+.heroRight{
+    display:flex;
+    width:47%;
+    justify-content:center;
+    align-items:center;
+}
+
+/* .heroRight img{
+    width:100%;
+} */
+
+
+
+
+
+/* Copy */
+
+.copy{
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+
+.topRow{
+    display:flex;
+    justify-content:space-between;
+    margin-top:2%;
+}
+
+.topRow div{
+    display:flex;
+    flex-direction:column;
+    width:48%
+}
+
+.middleImg{
+    display:flex;
+    max-width:100%;
+    justify-content:center;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.middleImg img{
+    width:100%;
+}
+
+.bottomRow{
+    display:flex;
+    margin-bottom:2%;
+    justify-content:space-between;
+}
+
+.bottomRow div{
+    width:30%;
+}
+
+
+
+/* contact */
+.contact{
+    font-family:"Titillium+Web", sans-serif;
+    font-style:normal;
+}
+
+/* footer */
+footer{
+    display:flex;
+    justify-content:center;
+    font-family:"Titillium+web",sans-serif;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+
+
+
+
+/************************************************** Media Queries *******************************************/
+ /* tablet  */
+
+@media screen 
+and (min-width:401px)
+and (max-width:800px){
+
+    body{
+        /* display:flex;
+        flex-direction:column; */
+        max-width:90%;
+        margin:0 auto;
+        align-items:center;
+    }
+
+    header{
+        display:flex;
+        width:100%;
+        flex-direction:column-reverse;
+        justify-content:center;
+        margin-top:5%;
+    }
+
+    nav{
+        width:100%;
+    }
+    .navLogo{
+        display:flex;
+        width:100%;
+        justify-content:center;
+        margin-bottom:5%;
+        margin-top:5%;
+
+    }
+
+    .heroBanner{
+        height:50vh;
+        
+    
+    }
+
+    .heroRight{
+        display:flex;
+        display:none;
+    }
+
+    .heroLeft{
+        width:100%;
+    }
+    .heroLeft a{
+        font-size:15px;
+        width:33%;
+        padding-top: 2%;
+        padding-bottom:2%;
+        align-items:center;
+    }
+
+    .copy h2{
+        font-size:20px;
+    }
+
+    .copy p{
+
+    }
+
+    footer{
+        margin-top:10%;
+        margin-bottom:5%;
+        font-size:12px;
+    }
+
+}
+
+
+/* Phone/Mobile */
+
+@media screen 
+and (min-width:1px)
+and (max-width:415px){
+
+body{
+    /* display:flex;
+    flex-direction:column; */
+    max-width:100%;
+    margin:0 auto;
+    align-items:center;
+}
+
+div{
+    padding:2%;
+}
+
+header{
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    height:40vh;
+    margin-top:3%;
+    width:100%;
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+
+nav a{
+    display:flex;
+    width:100%;
+    /* border-top:.5px solid gray; */
+    /* border-bottom:.5px solid gray; */
+    justify-content:center;
+    height:5vh;
+    align-items:center;
+    font-weight:normal;
+    padding:1%;
+
+}
+
+#services{
+    border-top:1px solid lightgray;
+    padding:2%;
+}
+
+#product{
+    border-top:1px solid lightgray;
+}
+
+#vision{
+    border-top:1px solid lightgray;
+}
+
+#features{
+    border-top:1px solid lightgray;
+}
+
+#about{
+    border-top:1px solid lightgray;
+}
+
+#contact{
+    border-top:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+}
+
+
+
+
+.navLogo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    /* margin-bottom:3%; */
+}
+
+.navLogo img{
+    width:50%;
+}
+
+.heroBanner{
+    height:40vh;
+}
+
+.heroLeft{
+    width:100%;
+}
+
+.heroLeft a{
+    font-size:15px;
+    width:50%;
+    /* height:10%; */
+    /* margin-bottom:20%; */
+    padding-top:5%;
+    padding-bottom:5%;
+    align-items:center;
+}
+
+.heroRight{
+    display:flex;
+    display:none;
+}
+
+.copy{
+    margin-top:10%;
+    margin-right:3%;
+    margin-left:3%;
+}
+
+.copy h2{
+    font-size:15px;
+}
+
+.copy p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.topRow{
+    flex-direction:column;
+    margin-top:3%;
+}
+
+.topRow div{
+    width:100%;
+}
+
+.bottomRow{
+    flex-direction:column;
+}
+
+.bottomRow div{
+    width:100%;
+}
+
+.contact{
+    margin-left:3%;
+}
+
+.contact h2{
+    font-size:15px;
+}
+
+address{
+    font-size:12px;
+}
+
+footer{
+    margin-top:10%;
+    margin-bottom:5%;
+    font-size:12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
