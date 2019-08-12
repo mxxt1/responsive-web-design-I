@@ -361,6 +361,8 @@ nav a{
 
 .copy{
     margin-top:10%;
+    margin-right:3%;
+    margin-left:3%;
 }
 
 .copy h2{
@@ -388,6 +390,10 @@ nav a{
 
 .bottomRow div{
     width:100%;
+}
+
+.contact{
+    margin-left:3%;
 }
 
 .contact h2{
