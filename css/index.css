@@ -37,7 +37,8 @@ nav{
 
 nav a{
     text-decoration:none;
-    color:gray;
+    color:lightgray;
+    font-weight:bold;
 }
 
 .navLogo{
@@ -138,13 +139,15 @@ nav a{
 
 /* contact */
 .contact{
-    font-family:
+    font-family:"Titillium+Web", sans-serif;
+    font-style:normal;
 }
 
 /* footer */
 footer{
     display:flex;
     justify-content:center;
+    font-family:"Titillium+web",sans-serif;
 }
 
 
@@ -205,6 +208,14 @@ and (max-width:800px){
         align-items:center;
     }
 
+    .copy h2{
+        font-size:20px;
+    }
+
+    .copy p{
+
+    }
+
 
 }
 
@@ -212,15 +223,19 @@ and (max-width:800px){
 /* Phone/Mobile */
 
 @media screen 
-and (min-width:200px)
+and (min-width:1px)
 and (max-width:415px){
 
 body{
     /* display:flex;
     flex-direction:column; */
-    max-width:90%;
+    max-width:100%;
     margin:0 auto;
     align-items:center;
+}
+
+div{
+    padding:2%;
 }
 
 header{
@@ -243,12 +258,37 @@ nav{
 nav a{
     display:flex;
     width:100%;
-    border-top:.5px solid gray;
-    border-bottom:1px solid gray;
+    /* border-top:.5px solid gray; */
+    /* border-bottom:.5px solid gray; */
     justify-content:center;
     height:4vh;
     align-items:center;
 
+}
+
+#services{
+    border-top:1px solid lightgray;
+}
+
+#product{
+    border-top:1px solid lightgray;
+}
+
+#vision{
+    border-top:1px solid lightgray;
+}
+
+#features{
+    border-top:1px solid lightgray;
+}
+
+#about{
+    border-top:1px solid lightgray;
+}
+
+#contact{
+    border-top:1px solid lightgray;
+    border-bottom:1px solid lightgray;
 }
 
 
@@ -314,6 +354,20 @@ nav a{
 
 .bottomRow div{
     width:100%;
+}
+
+.contact h2{
+    font-size:15px;
+}
+
+address{
+    font-size:12px;
+}
+
+footer{
+    margin-top:10%;
+    margin-bottom:5%;
+    font-size:12px;
 }
 
 
